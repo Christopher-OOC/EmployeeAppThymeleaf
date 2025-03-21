@@ -1,9 +1,10 @@
-package net.javaguides.springboot.service;
+package com.niit.mms.project3.service;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
+import com.niit.mms.project3.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -12,10 +13,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import net.javaguides.springboot.dto.UserRegistrationDto;
-import net.javaguides.springboot.model.Role;
-import net.javaguides.springboot.model.User;
-import net.javaguides.springboot.repository.UserRepository;
+import com.niit.mms.project3.dto.UserRegistrationDto;
+import com.niit.mms.project3.model.Role;
+import com.niit.mms.project3.model.User;
 
 @Service
 public class UserServiceImpl implements UserService{

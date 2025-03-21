@@ -1,4 +1,4 @@
-package net.javaguides.springboot.model;
+package com.niit.mms.project3.model;
 
 import jakarta.persistence.*;
 
@@ -18,6 +18,7 @@ public class Employee {
 	
 	@Column(name = "email")
 	private String email;
+
 	public long getId() {
 		return id;
 	}

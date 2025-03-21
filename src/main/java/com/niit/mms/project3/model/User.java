@@ -1,11 +1,11 @@
-package net.javaguides.springboot.model;
+package com.niit.mms.project3.model;
 
 import java.util.Collection;
 
 import jakarta.persistence.*;
 
 @Entity
-@Table(name =  "user", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+@Table(name =  "admins")
 public class User {
 	
 	@Id
@@ -17,7 +17,8 @@ public class User {
 	
 	@Column(name = "last_name")
 	private String lastName;
-	
+
+	@Column(unique = true)
 	private String email;
 	
 	private String password;

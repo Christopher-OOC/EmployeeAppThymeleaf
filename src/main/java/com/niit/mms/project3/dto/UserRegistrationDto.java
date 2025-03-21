@@ -1,4 +1,4 @@
-package net.javaguides.springboot.dto;
+package com.niit.mms.project3.dto;
 
 public class UserRegistrationDto {
 	private String firstName;

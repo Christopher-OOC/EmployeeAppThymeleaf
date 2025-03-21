@@ -1,4 +1,4 @@
-package net.javaguides.springboot.model;
+package com.niit.mms.project3.model;
 
 import jakarta.persistence.*;
 

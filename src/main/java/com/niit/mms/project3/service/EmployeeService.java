@@ -1,10 +1,10 @@
-package net.javaguides.springboot.service;
+package com.niit.mms.project3.service;
 
 import java.util.List;
 
 import org.springframework.data.domain.Page;
 
-import net.javaguides.springboot.model.Employee;
+import com.niit.mms.project3.model.Employee;
 
 public interface EmployeeService {
 	List<Employee> getAllEmployees();

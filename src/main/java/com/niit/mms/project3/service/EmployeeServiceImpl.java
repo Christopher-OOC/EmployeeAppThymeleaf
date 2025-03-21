@@ -1,8 +1,9 @@
-package net.javaguides.springboot.service;
+package com.niit.mms.project3.service;
 
 import java.util.List;
 import java.util.Optional;
 
+import com.niit.mms.project3.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -10,8 +11,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import net.javaguides.springboot.model.Employee;
-import net.javaguides.springboot.repository.EmployeeRepository;
+import com.niit.mms.project3.model.Employee;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
