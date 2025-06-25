@@ -3,6 +3,7 @@ package com.niit.mms.project3.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,10 +21,16 @@ public class EmployeeController {
 
 	@Autowired
 	private EmployeeService employeeService;
+
+	@Autowired
+	Environment environment;
 	
 	// display list of employees
 	@GetMapping("/")
 	public String viewHomePage(Model model) {
+
+	System.out.println("Who build this image? " + environment.getProperty("build.name"));
+
 		return findPaginated(1, "firstName", "asc", model);		
 	}
 	
